@@ -8,7 +8,8 @@
 .cabecalho{
     display:flex;
     position: fixed;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 2em;
     align-items:center;
    color: #fff;
     width: 100%;
@@ -32,6 +33,7 @@ backdrop-filter: blur(5px);
     cursor: pointer;
     text-decoration: none;
     color: #fff;
+    margin-right: 5em;
     padding: 2%;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -50,4 +52,7 @@ backdrop-filter: blur(5px);
     transition: all 0.7s ease-in-out;
     color: #fff;
     padding-top: 25vh;
+}
+.parte1-main .container h1{
+    max-width: 70%;
 }
