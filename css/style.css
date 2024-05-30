@@ -9,7 +9,7 @@
 
 .parte1-main{
     width: 100%;
-    height: 170vh;
+    height: 100%;
     padding: 0 2em 0 2em;
     background: url(../assets/images/img-02-parte-1-main.jpg);
     background-size:cover;
@@ -76,6 +76,7 @@ backdrop-filter: blur(5px);
 .parte1-main .container{
     display: flex;
     padding:  0 0 25em 0;
+    gap: 22em;
     flex-direction: column;
     color: #fff;
     padding-top: 25vh;
@@ -85,14 +86,24 @@ backdrop-filter: blur(5px);
     font-size: 2em;
     max-width: 80%;
 }
-.parte1-main .container .texto2{
-    position:absolute;
+.parte1-main .container .area-texto2{
+    display: flex;
+    justify-content: space-around;
+}
+.parte1-main .container .area-texto2{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    justify-content: center;
+}
+.parte1-main .container .area-texto2 figure img{
+   height:8em;
+}
+.parte1-main .container .area-texto2 .texto2{
     font-weight: bold;
-    margin: 9em 1em 0 0;
-    top: 60%;
+    
     font-size: 2em;
-    left: 42%;
-    max-width: 80%;
+    max-width: 60%;
     
 }
 
