@@ -6,54 +6,66 @@
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
 }
+
 .parte1-main{
     width: 100%;
-    height: 200vh;
+    height: 170vh;
     padding: 0 2em 0 2em;
-    background: url(../assets/images/img-02-mar.jpg);
+    background: url(../assets/images/img-02-parte-1-main.jpg);
     background-size:cover;
 }
 .parte1-main .cabecalho{
     display:flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 0 2em 0 2em;
     align-items:center;
    color: #fff;
     width: 100%;
-    height: 7em;
+    height: 8em;
     box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
 -webkit-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
 -moz-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
 backdrop-filter: blur(5px);
 }
+.cabecalho .logo{
+    width: 15%;
+}
 .cabecalho .logo h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
     cursor: pointer;
 }
 .cabecalho .logo h1 figure{
+    
     display: flex;
     align-items: center;
 }
 .cabecalho .logo h1 figure img{
-    height: 5em;
+    width: 5em;
+}
+.cabecalho .links-cabecalho{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+
 }
 .cabecalho a{
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-    margin-right: 5em;
-    padding: 2%;
+    padding: 10px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 .cabecalho .botao{
+    width: 15%;
     display: flex;
+    cursor: pointer;
+    justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 4em;
     border-radius: 15px;
     background-color: #46DB6C;
 }
 .cabecalho .botao:hover{
-  
     transition: all 0.2s ease-in;
     background-color: #46B5DB;
 }
@@ -69,18 +81,35 @@ backdrop-filter: blur(5px);
     padding-top: 25vh;
 }
 
-.parte1-main .container h2 {
-    font-size: 3em;
+.parte1-main .container h2{
+    font-size: 2em;
     max-width: 80%;
-    animation: slideInFromLeft 1s ease-out;
 }
-.parte1-main .container h3{
+.parte1-main .container .texto2{
     position:absolute;
+    font-weight: bold;
     margin: 9em 1em 0 0;
     top: 60%;
-    font-size: 3em;
+    font-size: 2em;
     left: 42%;
     max-width: 80%;
-    animation: slideInFromRight 1s ease-out;
+    
 }
 
+.parte2-main{
+    width: 100%;
+    height: 100vh;
+    padding: 0 2em 0 2em;
+    background: url(../assets/images/img-03-parte-2-main.jpg);
+    background-size:cover;
+}
+.parte2-main .container{
+    display: flex;
+    padding:  0 0 25em 0;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 25vh;
+}
+.parte2-main .container h4{
+    font-size: 3em;
+}
