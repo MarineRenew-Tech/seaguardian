@@ -4,17 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 .parte1-main{
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     padding: 0 2em 0 2em;
     background: url(../assets/images/img-02-mar.jpg);
     background-size:cover;
 }
 .parte1-main .cabecalho{
     display:flex;
-    
     justify-content: space-between;
     padding: 2em;
     align-items:center;
@@ -26,15 +26,16 @@
 -moz-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
 backdrop-filter: blur(5px);
 }
-.cabecalho .logo{
+.cabecalho .logo h1{
+    font-size: 1.2em;
     cursor: pointer;
 }
-.cabecalho .logo figure{
+.cabecalho .logo h1 figure{
     display: flex;
     align-items: center;
 }
-.cabecalho .logo figure img{
-    height: 6em;
+.cabecalho .logo h1 figure img{
+    height: 5em;
 }
 .cabecalho a{
     cursor: pointer;
@@ -44,49 +45,42 @@ backdrop-filter: blur(5px);
     padding: 2%;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+.cabecalho .botao{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    border-radius: 15px;
+    background-color: #46DB6C;
+}
+.cabecalho .botao:hover{
+  
+    transition: all 0.2s ease-in;
+    background-color: #46B5DB;
+}
 .cabecalho a:hover{
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .parte1-main .container{
     display: flex;
-    gap: 10em;
+    padding:  0 0 25em 0;
     flex-direction: column;
     color: #fff;
     padding-top: 25vh;
 }
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(+100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
-.parte1-main .container h1 {
-    font-size: 2em;
-    max-width: 70%;
+.parte1-main .container h2 {
+    font-size: 3em;
+    max-width: 80%;
     animation: slideInFromLeft 1s ease-out;
 }
-.parte1-main .container h2{
+.parte1-main .container h3{
     position:absolute;
+    margin: 9em 1em 0 0;
     top: 60%;
-    font-size: 2em;
+    font-size: 3em;
     left: 42%;
-    max-width: 70%;
+    max-width: 80%;
     animation: slideInFromRight 1s ease-out;
 }
 
