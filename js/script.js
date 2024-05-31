@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', function(){
     let p2 = document.querySelector(".texto2");
     let p1 = document.querySelector(".texto1");
     let t1 = document.querySelector(".termo1");
+    let coralSaudavel = document.querySelector(".coral-saudavel");
+    let coralMorto = document.querySelector(".coral-morto");
 
+    
     t1.style.opacity = "0";
     p2.style.opacity = "0";
     p1.style.transform = "translateX(-100%)";
@@ -24,20 +27,36 @@ document.addEventListener('DOMContentLoaded', function(){
            p2.style.transform= "translateX(110%)";
            p1.style.transition = "1s";
            t1.style.opacity = "0";
+           coralSaudavel.style.opacity = "0";
+            coralMorto.style.opacity = "0";
         }else if(this.window.scrollY >= this.window.innerHeight * 0.3){
             p1.style.transform = "translateX(-100%)";
             p2.style.transform = "translateX(0)";
             p1.style.opacity = "0";
             p2.style.opacity = "1";
             t1.style.opacity = "1";
-            p2.style.transition= "1s";
-        }else if(this.window.scrollY >= this.window.innerHeight * 0.7){
-            this.window.scrollTo({
-                top: this.scrollY + 20,
-                behavior: "smooth"
-            });
+            p2.style.transition= "1s"; 
         }
     });
+
+    let showCoralSaudavel = true; 
+
+function alternarCoral() {
+    if (showCoralSaudavel) {
+        coralSaudavel.style.transition = "2s";
+        coralSaudavel.style.opacity = "1";
+        coralMorto.style.transition = "2s";
+        coralMorto.style.opacity = "0";
+    } else {
+        coralSaudavel.style.transition = "2s";
+        coralSaudavel.style.opacity = "0";
+        coralMorto.style.transition = "2s";
+        coralMorto.style.opacity = "1";
+    }
+    showCoralSaudavel = !showCoralSaudavel; 
+}
+
+    setInterval(alternarCoral, 5000);
 });
 
 
