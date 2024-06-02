@@ -39,24 +39,27 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 
-    let showCoralSaudavel = true; 
+    let showCoralSaudavel = false;
 
-function alternarCoral() {
-    if (showCoralSaudavel) {
-        coralSaudavel.style.transition = "2s";
-        coralSaudavel.style.opacity = "1";
-        coralMorto.style.transition = "2s";
-        coralMorto.style.opacity = "0";
-    } else {
-        coralSaudavel.style.transition = "2s";
-        coralSaudavel.style.opacity = "0";
-        coralMorto.style.transition = "2s";
-        coralMorto.style.opacity = "1";
+    function alternarCoral() {
+        if (showCoralSaudavel) {
+            coralSaudavel.style.transition = "2s";
+            coralSaudavel.style.opacity = "1";
+            coralMorto.style.transition = "2s";
+            coralMorto.style.opacity = "0";
+        } else {
+            coralSaudavel.style.transition = "2s";
+            coralSaudavel.style.opacity = "0";
+            coralMorto.style.transition = "2s";
+            coralMorto.style.opacity = "1";
+        }
+        showCoralSaudavel = !showCoralSaudavel; 
     }
-    showCoralSaudavel = !showCoralSaudavel; 
-}
-
     setInterval(alternarCoral, 5000);
+
+
+
+    
 });
 
 
