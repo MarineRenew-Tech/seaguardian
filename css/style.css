@@ -146,13 +146,65 @@ backdrop-filter: blur(5px);
 .parte2-main .container .corais figure figcaption{
     display: flex;
     padding-top: 1em;
+    padding-bottom: 6em;
     justify-content: center;
     font-size: 1.5em;
     font-weight: 600;
 }
-.rodape{
-    height: 2em;
+.parte3-main{
+    width: 100%;
+    height: 100vh;
+    padding: 0 2em 0 2em;
+    background: url(../assets/images/img-09-parte-3-main.jpg);
+    background-size:cover;
+}
+.parte3-main .container{
+    display: flex;
+    flex-direction: column;
     color: #fff;
+    gap: 5em;
+    margin-top: 10em;
+}
+.parte3-main .container article{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.parte3-main .container article h4{
+    font-size: 3em;
+}
+.parte3-main .container article p{
+    max-width: 70%;
+}
+.parte3-main .container article .sea-guardian-info{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+}
+
+.parte3-main .container article .sea-guardian-info figure img{
+    height:9em;  
+    border-radius: 20px;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    justify-content: center;
+    color: #fff;
+    padding: 2%;
     text-align: center;
     background-color: #0d3543;
+}
+.rodape .rodape-info{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+.rodape .rodape-info a{
+    text-decoration: none;
+    color: #fff;
 }
