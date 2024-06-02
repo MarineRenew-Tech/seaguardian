@@ -15,7 +15,7 @@
     background: url(../assets/images/img-02-parte-1-main.jpg);
     background-size:cover;
 }
-.parte1-main .cabecalho{
+ .cabecalho{
     display:flex;
     justify-content: space-between;
     padding: 0 2em 0 2em;
@@ -110,7 +110,45 @@ backdrop-filter: blur(5px);
     max-width: 60%;
     
 }
-
+/*----------------parte integrantes -------------------*/
+.parte1-main .integrantes{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.parte1-main .integrantes .info-integrantes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    width: 20vw;
+    border: solid 3px #fff;
+    background: #0d3543;
+    background: linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
+    background: -webkit-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
+    background: -moz-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
+    margin: 3%;
+    padding: 3%;
+}
+.parte1-main .integrantes .info-integrantes h2{
+    font-size: 1em;
+}
+.parte1-main .integrantes .info-integrantes h3{
+    font-size: 0.8em;
+}
+.parte1-main .integrantes .info-integrantes figure img{
+    height: 10em;
+    border-radius: 50%;
+    border: solid 3px #fff;
+}
+.parte1-main .integrantes .info-integrantes figure .github{
+    height: 3em;
+   border: none;
+}
+/*----------------fim parte integrantes -------------------*/
 .parte2-main{
     width: 100%;
     padding: 0 2em 0 2em;
