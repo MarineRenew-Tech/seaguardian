@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function(){
         p1.style.opacity = "1";
     },500);
 
-
     window.addEventListener('scroll',function(){
         if(this.window.scrollY <= this.window.innerHeight * 0.3){
            p1.style.transform = "translateX(0)";
@@ -57,9 +56,21 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     setInterval(alternarCoral, 5000);
 
+    function scrollSuave(event) {
+        event.preventDefault();
+        const targetId = event.currentTarget.getAttribute("href");
+        document.querySelector(targetId).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 
+  
+    const links = document.querySelectorAll('a.link-areas-main');
+    links.forEach(link => {
+        link.addEventListener('click',scrollSuave);
+    });
 
-    
 });
+
 
 
