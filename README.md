@@ -16,7 +16,7 @@
 ### Terceira Parte: Soluções Propostas
 
 - **Sistemas de Monitoramento**: Descrição do sistema desenvolvido pela MarineRenew-Tech que monitora a cor dos corais, envia alertas e inclui detectores de pH, poluição e temperatura.
-- **Como os Usuários Podem Ajudar**: Orientações sobre como o assistente SeaGuardian pode guiar os usuários a agir corretamente em situações que envolvem vida marinha, como lidar com lixo no mar, praia, animais mortos, encalhados ou caminhando pela praia.
+- **Como os Usuários Podem Ajudar**: Orientações sobre como o assistente SeaGuardian pode guiar os usuários a agir corretamente em situações que envolvem vida marinha, como lidar com lixo no mar, praia e o que fazer na situação de encontrar animais mortos, encalhados ou caminhando pela praia.
 
 ### Integrantes:
 
