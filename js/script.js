@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         showCoralSaudavel = !showCoralSaudavel; 
     }
-    setInterval(alternarCoral, 5000);
+    setInterval(alternarCoral, 3000);
 
     function scrollSuave(event) {
         event.preventDefault();
