@@ -1,7 +1,7 @@
-![SeaGuardian Logo](/images/logo.png)
 
 
-# SeaGuardian
+
+# <img src="assets/images/img-01-logo.png" alt="SeaGuardian Logo" width="150" > SeaGuardian
 
 
 **SeaGuardian** é um projeto voltado para a proteção dos oceanos e dos corais, destacando a importância dessas partes vitais do nosso planeta e propondo soluções tecnológicas para monitoramento e preservação.
@@ -26,5 +26,4 @@
 
 - **David Rapeckman: Rm556607**
 - **Brendon Brasil: Rm559196**
-- **Vini![logo](https://github.com/MarineRenew-Tech/seaguardian/assets/166864958/a8c0942e-ec46-49fb-b50d-e8a295cd385d)
-cius Bernardes: Rm554728**
+- **Vinicius Bernardes: Rm554728**
