@@ -330,7 +330,8 @@ body.login-body {
 }
 
 .login-container input[type="email"],
-.login-container input[type="password"] {
+.login-container input[type="password"],
+input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -365,7 +366,17 @@ body.login-body {
 .login-container p a:hover {
     text-decoration: underline;
 }
-
+.login-container form i {
+    overflow: visible;
+    display:grid;
+    position: relative;
+    cursor: pointer;
+    bottom: 3em;
+    transform: scale(1.2);
+    margin:   0 4em  0 88%;
+    
+   
+}
 /* Estilos para a página de cadastro */
 body.signup-body {
     display: flex;
