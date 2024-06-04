@@ -366,6 +366,7 @@ body.login-body {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* Estilos para a página de cadastro */
 body.signup-body {
     display: flex;
@@ -374,6 +375,19 @@ body.signup-body {
     height: 100vh;
     background-color: #f0f2f5;
 }
+=======
+a {
+    color: #4CAF50;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+>>>>>>> ae9f6aed992e553e9c243d1d9a677645fabc7406
 
 .signup-container {
     background-color: #fff;
