@@ -301,17 +301,25 @@ backdrop-filter: blur(5px);
     text-decoration: none;
     color: #fff;
 }
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 /* Estilos para a página de login */
 body.login-body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f2f5;
+    background: url(../assets/images/img-09-parte-3-main.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .login-container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -331,7 +339,7 @@ body.login-body {
 
 .login-container input[type="email"],
 .login-container input[type="password"],
-input[type="text"] {
+.login-container input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -366,38 +374,29 @@ input[type="text"] {
 .login-container p a:hover {
     text-decoration: underline;
 }
+
 .login-container form i {
     overflow: visible;
-    display:grid;
+    display: grid;
     position: relative;
     cursor: pointer;
     bottom: 3em;
     transform: scale(1.2);
-    margin:   0 4em  0 88%;
-    
-   
+    margin: 0 4em 0 88%;
 }
+
 /* Estilos para a página de cadastro */
 body.signup-body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f2f5;
-}
-
-a {
-    color: #4CAF50;
-    text-decoration: none;
-
-}
-
-a:hover {
-    text-decoration: underline;
+    background: url(../assets/images/img-09-parte-3-main.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 .signup-container {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -450,5 +449,15 @@ a:hover {
 }
 
 .signup-container p a:hover {
+    text-decoration: underline;
+}
+
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
