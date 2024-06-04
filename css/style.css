@@ -314,17 +314,16 @@ body.login-body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(../assets/images/img-09-parte-3-main.jpg) no-repeat center center fixed;
+    background: url(../assets/images/img-03-parte-2-main.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 .login-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px;
     width: 300px;
     text-align: center;
+    backdrop-filter: blur(10px); 
 }
 
 .login-container h2 {
@@ -391,12 +390,12 @@ body.signup-body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(../assets/images/img-09-parte-3-main.jpg) no-repeat center center fixed;
+    background: url(../assets/images/img-03-parte-2-main.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 .signup-container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -449,15 +448,5 @@ body.signup-body {
 }
 
 .signup-container p a:hover {
-    text-decoration: underline;
-}
-
-
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a:hover {
     text-decoration: underline;
 }
