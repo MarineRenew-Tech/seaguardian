@@ -301,9 +301,16 @@ backdrop-filter: blur(5px);
     text-decoration: none;
     color: #fff;
 }
-*---------------- parte login/singup -------------------*/
+/* Estilos para a página de login */
+body.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
 
-.login-container, .signup-container {
+.login-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -312,7 +319,18 @@ backdrop-filter: blur(5px);
     text-align: center;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -320,7 +338,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     border-radius: 4px;
 }
 
-button {
+.login-container button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -330,53 +348,34 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-    
-button:disabled {
-    background-color: #ccc; 
-    cursor: not-allowed;
-}
 
-button:hover {
+.login-container button:hover {
     background-color: #45a049;
 }
 
-p {
+.login-container p {
     margin-top: 20px;
-
 }
 
-p a {
+.login-container p a {
     color: #4CAF50;
     text-decoration: none;
 }
 
-p a:hover {
+.login-container p a:hover {
     text-decoration: underline;
 }
 
-a {
-    color: #4CAF50;
-    text-decoration: none;
-
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    margin: 0;
+/* Estilos para a página de cadastro */
+body.signup-body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
+    background-color: #f0f2f5;
 }
 
-.login-container, .signup-container {
+.signup-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -385,15 +384,50 @@ body {
     text-align: center;
 }
 
-h2 {
+.signup-container h2 {
     margin-bottom: 20px;
-
 }
 
-label {
+.signup-container label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-/*---------------- fim parte login/singup -------------------*/
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-container button:hover {
+    background-color: #45a049;
+}
+
+.signup-container p {
+    margin-top: 20px;
+}
+
+.signup-container p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signup-container p a:hover {
+    text-decoration: underline;
+}
