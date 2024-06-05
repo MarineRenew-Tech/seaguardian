@@ -48,17 +48,14 @@ if(localStorage.getItem("cadastro-usuarios") == null) {
   }
 
 
-let inputEmail = document.getElementById("idEmail").value;
-let inputNome = document.getElementById("idName").value;
-let inputSenha = document.getElementById("idPassword").value;
+let inputEmail = document.getElementById("idEmail")
+let inputNome = document.getElementById("idName")
+let inputSenha = document.getElementById("idPassword")
   function cadastrar(event) {
     event.preventDefault();
-    let usuario = {nome: inputNome,cpf: inputCpf,email: inputEmail,senha: inputSenha};
+    let usuario = {nome: inputNome.value,cpf: inputCpf.value,email: inputEmail.value,senha: inputSenha.value};
 
-    
-
-    const listaUsuario = JSON.parse(localStorage.getItem("cadastro-usuarios"))
-    listaUsuario.map((user) => {
+    usuarioCadastrados.map((user) => {
         if((user.email == inputEmail.value) && (user.cpf == inputCpf.value)) {
         msgLogin.innerText = "Usuario ja cadastrado!"
         msgLogin.setAttribute("class", "deslogado") 
@@ -66,14 +63,15 @@ let inputSenha = document.getElementById("idPassword").value;
     }else{
 
         usuarioCadastrados.push(usuario);
+        localStorage.setItem("cadastro-usuarios", JSON.stringify(usuarioCadastrados));
         msgLogin.innerText = "Usuario cadastrado com sucesso!"
         msgLogin.setAttribute("class", "logado") 
 
-        // const timeoutTrue = setTimeout(()=>{
-        //     msgLogin.innerText = "";
-        //     msgLogin.setAttribute("class", "")   
-        //     window.location.href = "../pages/login.html";
-        //   },2000);
+        const timeoutTrue = setTimeout(()=>{
+            msgLogin.innerText = "";
+            msgLogin.setAttribute("class", "")   
+            window.location.href = "../pages/login.html";
+          },2000);
 
         return false;
         }
