@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/login-cadastro.js" defer></script>
     <title>Cadastro - SeaGuardian</title>
 </head>
 <body class="signup-body">
@@ -14,18 +15,34 @@
         <a href="../index.html" class="back-to-home"><i class="fas fa-home"></i> Voltar para a página inicial</a>
         <h2>Cadastre-se</h2>
         <form action="index.html">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="inputs">
+                <label for="#idName">Nome:</label>
+                <input type="text" id="idName" name="txtName" placeholder="João da Silva" required>
+            </div>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+            <div class="inputs">
+                <label for="#idCpf">Cpf:</label>
+                <input type="text" id="idCpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required minlength="14" maxlength="14"  required>
+            </div>
 
-            <label for="confirm-password">Confirmar Senha:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
+             <div class="inputs">
+                <label for="idEmail">Email:</label>
+                <input type="email" id="idEmail" name="email"  placeholder="exemplo@email.com" required>
+            </div>
 
+            <div class="inputs">
+                <label for="password">Senha:</label>
+                <input type="password" id="idPassword" name="txtSenha" placeholder="************" required maxlength="18">
+                <i id="olho" class="fa-regular fa-eye-slash"></i>
+            </div>
+
+            <div class="inputs">
+                <label for="confirm-password">Confirmar Senha:</label>
+                <input type="password" id="idConfPassword" name="txtConfSenha" placeholder="************" maxlength="18">
+                <i id="olho2" class="fa-regular fa-eye-slash"></i>
+            </div>
+           
             <button type="submit">Cadastrar</button>
         </form>
         <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
