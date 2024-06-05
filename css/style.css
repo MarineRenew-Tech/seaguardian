@@ -7,9 +7,6 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-@media (max-width:1000) {
-    
-}
 .parte1-main{
     width: 100%;
     height: 100%;
@@ -377,7 +374,8 @@ body.login-body {
     text-decoration: underline;
 }
 
-.login-container form i {
+.login-container form i{
+    color: #000;
     overflow: visible;
     display: grid;
     position: relative;
@@ -454,4 +452,273 @@ body.signup-body {
 
 .signup-container p a:hover {
     text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .parte1-main{
+        padding: 0;
+    }
+    .cabecalho{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        align-items:center;
+       color: #fff;
+        width: 100%;
+        height : 22em;
+        box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
+    backdrop-filter: blur(5px);
+    }
+    .cabecalho .logo h1{
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    .cabecalho .logo figure{
+        padding-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecalho .logo figure img{
+        width: 5em;
+    }
+    .cabecalho .links-cabecalho{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5em;
+    
+    }
+    .cabecalho a{
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .cabecalho .botao{
+        font-weight: bold;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        height: 4em;
+        border-radius: 12px;
+        background-color: #46DB6C;
+    }
+    .cabecalho .cadastro{
+       display: flex;
+       flex-direction: column;
+       gap: 1em;
+       align-items: center;
+       padding-bottom: 0.5em;
+    }
+    .cabecalho .botao:hover{
+        transition: all 0.2s ease-in;
+        background-color: #46B5DB;
+    }
+    .cabecalho a:hover{
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    
+.parte1-main .container{
+    display: flex;
+    padding:  0 0 10em 0;
+    gap: 2em;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 7vh;
+}
+
+.parte1-main .container h2{
+    padding-left: 1em;
+    font-size: 1.3em;
+    max-width: 80%;
+}
+.parte1-main .container .area-texto2{
+    display: flex;
+    justify-content: space-around;
+}
+.parte1-main .container .area-texto2{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    justify-content: center;
+}
+.parte1-main .container .area-texto2 figure img{
+   height:5em;
+}
+.parte1-main .container .area-texto2 .texto2{
+    font-weight: bold;
+    font-size: 1.3em;
+    max-width: 60%;
+    
+}
+/*----------------parte integrantes -------------------*/
+.parte1-main .integrantes{
+    display: flex;
+    height: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.parte1-main .integrantes .info-integrantes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    width: 20vw;
+    border: solid 3px #fff;
+    background: #0d3543;
+    background: linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
+    background: -webkit-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
+    background: -moz-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
+    margin: 3%;
+    padding: 3%;
+}
+.parte1-main .integrantes .info-integrantes h2{
+    font-size: 1em;
+}
+.parte1-main .integrantes .info-integrantes h3{
+    font-size: 0.8em;
+}
+.parte1-main .integrantes .info-integrantes figure img{
+    height: 10em;
+    border-radius: 50%;
+    border: solid 3px #fff;
+}
+.parte1-main .integrantes .info-integrantes figure .github{
+    height: 3em;
+   border: none;
+}
+/*-----------------fim integrantes-----------------------*/
+.parte2-main{
+    width: 100%;
+    padding: 0 2em 0 2em;
+    background: url(../assets/images/img-03-parte-2-main.jpg);
+    background-size:cover;
+}
+.parte2-main .container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 3em;
+    margin-top: 5em;
+}
+.parte2-main .container article{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.parte2-main .container article h4{
+    font-size: 2em;
+}
+.parte2-main .container .corais{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 10%;
+}
+.parte2-main .container .corais figure img{
+   width: 20em;
+   height: 15em;
+}
+.parte2-main .container .corais figure figcaption{
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 6em;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.parte3-main{
+    width: 100%;
+    padding: 0 2em 0 2em;
+    background: url(../assets/images/img-09-parte-3-main.jpg);
+    background-size:cover;
+}
+.parte3-main .container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 3em;
+    margin-top: 5em;
+}
+.parte3-main .container article{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.parte3-main .container article h4{
+    font-size: 2em;
+}
+.parte3-main .container article p{
+    max-width: 80%;
+}
+.parte3-main .container article .sea-guardian-info{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+}
+
+.parte3-main .container article .sea-guardian-info figure img{
+    height:9em;  
+    border-radius: 20px;
+}
+.parte3-main .container article .sea-guardian-info-secundaria{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 10em;
+}
+.parte3-main .container article .sea-guardian-info-secundaria h5,h6{
+    font-size: 1.2em;
+}
+.parte3-main .container article .sea-guardian-info-secundaria p{
+    padding-bottom: 3em;
+}
+.parte3-main .container article .sea-guardian-info-secundaria .seta{
+    display: flex;
+    max-width: 100%; 
+    align-items: center;
+}
+.parte3-main .container article .sea-guardian-info-secundaria .seta .corpo-seta{
+    background-color: #fff;
+    width: 100%;
+    height: 0.2em;
+}
+.parte3-main .container article .sea-guardian-info-secundaria .seta .cabeca-seta{
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 15px solid transparent;
+ 
+}
+.parte3-main .container article .sea-guardian-info-secundaria .etapas{
+    display: flex;
+    max-width: 100%; 
+    gap: 1.5em;
+    align-items: center;
+   
+}
+
+.parte3-main .container article .sea-guardian-info-secundaria .etapas figure img{
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 50%;
+    height: 4em;
+}
+.parte3-main .container article .sea-guardian-info-secundaria .etapas figure figcaption h4{
+    max-width: 80%;
+    padding-top: 2%;
+    font-size: 0.8em;
+    font-weight: 500;
+}
 }
