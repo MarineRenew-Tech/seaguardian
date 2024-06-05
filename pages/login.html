@@ -12,10 +12,11 @@
     <title>Login - SeaGuardian</title>
 </head>
 <body class="login-body">
+    <p id="msgLogin"></p>
     <div class="login-container">
         <a href="../index.html" class="back-to-home"><i class="fas fa-home"></i> Voltar para a página inicial</a>
         <h2>Login</h2>
-        <form action="index.html">
+        <form action="#" onsubmit="return logar(event)">
 
             <div class="inputs">
                 <label for="idEmail">Email:</label>
@@ -28,7 +29,7 @@
                 <i id="olho" class="fa-regular fa-eye-slash"></i>
             </div>
 
-            <button type="submit">Entrar</button>
+            <button type="submit" id="login">Entrar</button>
         </form>
         <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
     </div>

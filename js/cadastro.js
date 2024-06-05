@@ -38,3 +38,46 @@ inputCpf.addEventListener("input", (e) => {
 
     e.target.value = cpf;
 });
+
+let usuarioCadastrados = [
+    {nome:"v",cpf:"123-456-789-10",email:"v@email.com", senha:"123456"},
+  ];
+
+if(localStorage.getItem("cadastro-usuarios") == null) {
+    localStorage.setItem("cadastro-usuarios", JSON.stringify(usuarioCadastrados));
+  }
+
+
+let inputEmail = document.getElementById("idEmail").value;
+let inputNome = document.getElementById("idName").value;
+let inputSenha = document.getElementById("idPassword").value;
+  function cadastrar(event) {
+    event.preventDefault();
+    let usuario = {nome: inputNome,cpf: inputCpf,email: inputEmail,senha: inputSenha};
+
+    
+
+    const listaUsuario = JSON.parse(localStorage.getItem("cadastro-usuarios"))
+    listaUsuario.map((user) => {
+        if((user.email == inputEmail.value) && (user.cpf == inputCpf.value)) {
+        msgLogin.innerText = "Usuario ja cadastrado!"
+        msgLogin.setAttribute("class", "deslogado") 
+        return false;
+    }else{
+
+        usuarioCadastrados.push(usuario);
+        msgLogin.innerText = "Usuario cadastrado com sucesso!"
+        msgLogin.setAttribute("class", "logado") 
+
+        // const timeoutTrue = setTimeout(()=>{
+        //     msgLogin.innerText = "";
+        //     msgLogin.setAttribute("class", "")   
+        //     window.location.href = "../pages/login.html";
+        //   },2000);
+
+        return false;
+        }
+    }
+    )
+
+  }
