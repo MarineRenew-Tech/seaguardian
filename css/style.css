@@ -437,7 +437,7 @@ body.signup-body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.signup-container .inputs #olho, #olho2{
+.signup-container .inputs i1, i2, i3{
     color: #000;
     overflow: visible;
     display: grid;

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/img-01-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="../js/login-cadastro.js" defer></script>
+    <script src="../js/cadastro.js" defer></script>
     <title>Cadastro - SeaGuardian</title>
 </head>
 <body class="signup-body">
@@ -17,30 +18,30 @@
         <form action="index.html">
 
             <div class="inputs">
-                <label for="#idName">Nome:</label>
+                <label for="idName">Nome:</label>
                 <input type="text" id="idName" name="txtName" placeholder="João da Silva" required>
             </div>
 
             <div class="inputs">
-                <label for="#idCpf">Cpf:</label>
-                <input type="text" id="idCpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required minlength="14" maxlength="14"  required>
+                <label for="idCpf">Cpf:</label>
+                <input type="text" id="idCpf" name="txtCpf" placeholder="XXX.XXX.XXX-XX" required minlength="14" maxlength="14"  required>
             </div>
 
              <div class="inputs">
                 <label for="idEmail">Email:</label>
-                <input type="email" id="idEmail" name="email"  placeholder="exemplo@email.com" required>
+                <input type="email" id="idEmail" name="txtEmail"  placeholder="exemplo@email.com" required>
             </div>
 
             <div class="inputs">
-                <label for="password">Senha:</label>
+                <label for="idPassword">Senha:</label>
                 <input type="password" id="idPassword" name="txtSenha" placeholder="************" required maxlength="18">
-                <i id="olho" class="fa-regular fa-eye-slash"></i>
+                <i2 id="olho2" class="fa-regular fa-eye-slash"></i2>
             </div>
 
             <div class="inputs">
-                <label for="confirm-password">Confirmar Senha:</label>
+                <label for="idConfPassword">Confirmar Senha:</label>
                 <input type="password" id="idConfPassword" name="txtConfSenha" placeholder="************" maxlength="18">
-                <i id="olho2" class="fa-regular fa-eye-slash"></i>
+                <i3 id="olho3" class="fa-regular fa-eye-slash"></i3>
             </div>
            
             <button type="submit">Cadastrar</button>
