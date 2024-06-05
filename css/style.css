@@ -328,9 +328,13 @@ body.login-body {
     width: 300px;
     text-align: center;
 }
-
+.login-container .back-to-home{
+    text-decoration: none;
+    color: #fff;
+}
 .login-container h2 {
     margin-bottom: 20px;
+    padding-top: 1em;
 }
 
 .login-container label {
@@ -400,7 +404,7 @@ body.signup-body {
 .signup-container {
     color: #fff;
     border: 2px solid #fff;
-    padding: 1.7em 2em;
+    padding: 2.5em 3em;
     border-radius: 8px;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -410,6 +414,7 @@ body.signup-body {
 
 .signup-container h2 {
     margin-bottom: 20px;
+    padding-top: 1em;
 }
 
 .signup-container label {
@@ -454,4 +459,9 @@ body.signup-body {
 
 .signup-container p a:hover {
     text-decoration: underline;
+}
+
+.signup-container .back-to-home{
+    text-decoration: none;
+    color: #fff;
 }
