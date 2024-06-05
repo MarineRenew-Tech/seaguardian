@@ -559,6 +559,8 @@ body.signup-body {
 /*----------------parte integrantes -------------------*/
 .parte1-main .integrantes{
     display: flex;
+    flex-direction: column;
+    margin: 5em 0;
     height: 100%;
     color: #fff;
     justify-content: center;
@@ -571,14 +573,14 @@ body.signup-body {
     justify-content: center;
     border-radius: 12px;
     align-items: center;
-    width: 20vw;
+    width: 70vw;
     border: solid 3px #fff;
     background: #0d3543;
     background: linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
     background: -webkit-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
     background: -moz-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
     margin: 3%;
-    padding: 3%;
+    
 }
 .parte1-main .integrantes .info-integrantes h2{
     font-size: 1em;
