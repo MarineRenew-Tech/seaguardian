@@ -345,6 +345,7 @@ body.login-body {
 .login-container input[type="email"],
 .login-container input[type="password"],
 .login-container input[type="text"] {
+    outline: none;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -431,6 +432,7 @@ body.signup-body {
 .signup-container input[type="text"],
 .signup-container input[type="email"],
 .signup-container input[type="password"] {
+    outline: none;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
