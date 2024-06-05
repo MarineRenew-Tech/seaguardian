@@ -1,4 +1,4 @@
-let iconEye = document.querySelector("i");
+let iconEye = document.getElementById("olho");
 iconEye.addEventListener('click', function(){
     
     let inputSenha = document.querySelector("#idPassword");
