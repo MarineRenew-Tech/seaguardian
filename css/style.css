@@ -328,6 +328,12 @@ body.login-body {
 
 .login-container h2 {
     margin-bottom: 20px;
+    padding-top: 1em;
+}
+
+.login-container .back-to-home{
+    text-decoration: none;
+    color: #fff;
 }
 
 .login-container label {
@@ -408,6 +414,12 @@ body.signup-body {
 
 .signup-container h2 {
     margin-bottom: 20px;
+    padding-top: 1em;
+}
+
+.signup-container .back-to-home{
+    text-decoration: none;
+    color: #fff;
 }
 
 .signup-container label {
