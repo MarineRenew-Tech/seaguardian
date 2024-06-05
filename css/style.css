@@ -112,7 +112,7 @@ backdrop-filter: blur(5px);
 /*----------------parte integrantes -------------------*/
 .parte1-main .integrantes{
     display: flex;
-    height: 100%;
+    height: 100vh;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -738,9 +738,8 @@ body.signup-body {
     font-weight: 500;
 }
 }
-@media only screen and (min-width: 601px) and (max-width: 1000px){
+@media only screen and (min-width: 601px) and (max-width: 1060px){
     .parte1-main{
-      
         padding: 0;
         background: url(../assets/images/img-02-parte-1-main.jpg);
         background-size:cover;
@@ -844,11 +843,12 @@ body.signup-body {
 /*----------------parte integrantes -------------------*/
 .parte1-main .integrantes{
     display: flex;
-    height: 100%;
+    height: 100vh;
     color: #fff;
     justify-content: center;
+    padding: 1em;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
 }
 .parte1-main .integrantes .info-integrantes{
     display: flex;
@@ -856,14 +856,15 @@ body.signup-body {
     justify-content: center;
     border-radius: 12px;
     align-items: center;
-    width: 20vw;
+    width: 40vw;
+    height: 30vh;
     border: solid 3px #fff;
     background: #0d3543;
     background: linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
     background: -webkit-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
     background: -moz-linear-gradient(16deg,#0d3543 0%, #46b5db 80%);
-    margin: 3%;
-    padding: 3%;
+    margin: 5% 0;
+    padding: 2%;
 }
 .parte1-main .integrantes .info-integrantes h2{
     font-size: 1em;
@@ -872,12 +873,12 @@ body.signup-body {
     font-size: 0.8em;
 }
 .parte1-main .integrantes .info-integrantes figure img{
-    height: 10em;
+    height: 7em;
     border-radius: 50%;
     border: solid 3px #fff;
 }
 .parte1-main .integrantes .info-integrantes figure .github{
-    height: 3em;
+    height: 2em;
    border: none;
 }
 /*----------------fim parte integrantes -------------------*/
