@@ -437,7 +437,7 @@ body.signup-body {
     outline: none;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -447,7 +447,7 @@ body.signup-body {
     display: grid;
     position: relative;
     cursor: pointer;
-    bottom: 3em;
+    bottom: 2.5em;
     transform: scale(1.2);
     margin: 0 4em 0 88%;
 }
