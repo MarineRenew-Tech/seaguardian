@@ -538,8 +538,51 @@ body.signup-body {
 }
 /*---------------------Sugestoes------------------*/
 .sugestoes{
-    background: url(../assets/images/img-03-parte-2-main.jpg);
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1.7em 2em;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+}
+
+.sugestoes .texto-sugestao textarea{
+  
+   resize: none;
+    width: 100%;
+    height: 40vh
+}
+.sugestoes .back-to-home{
+    text-decoration: none;
+    color: #fff;
+}
+.sugestoes button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sugestoes button:hover {
+    background-color: #45a049;
+}
+.sugestoes input[type="text"]{
+   outline: none;
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
 }
 /*-------------------Fim sugestões-------------------*/
 @media only screen and (max-width: 600px) {
@@ -813,6 +856,20 @@ body.signup-body {
     padding-top: 2%;
     font-size: 0.8em;
     font-weight: 500;
+}
+.sugestoes{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1.7em 2em;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
 }
 }
 @media only screen and (min-width: 601px) and (max-width: 1060px){

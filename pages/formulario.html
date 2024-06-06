@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/images/img-01-logo.png" type="image/x-icon">
 </head>
-<body class="sugestoes">
+<body class="signup-body">
     <header class="cabecalho-login-cadastro-sugestoes">
        
         <div class="logo">
@@ -17,5 +17,28 @@
         </div>
         
     </header>
+    <div class=""></div>
+    <form action="#" class="sugestoes" onsubmit="return enviar(event)">
+
+        <a href="../index.html" class="back-to-home"><i class="fas fa-home"></i> Voltar para a página inicial</a>
+        <h2>Nos diga suas sugestões para melhorarmos o site:</h2>
+        
+
+        <div class="texto-sugestao">
+            <textarea type="text" name="txtSugestao"  required minlength="4" maxlength="350"  required></textarea>
+        </div>
+    
+       
+        <button type="submit">Enviar Sugestão</button>
+
+    </form>
+    <footer class="rodape">
+        <div class="rodape-info">
+            <a href="https://github.com/MarineRenew-Tech/seaguardian"> <figure><img src="../assets/images/img-06-github-icon-footer.svg" alt="github"></figure></a>
+            <a href="../pages/integrantes.html">Integrantes</a>
+        </div>
+        <p>SeaGuardian todos os direitos reservados ©</p>
+    </footer>
 </body>
+
 </html>
