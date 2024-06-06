@@ -11,13 +11,23 @@
     <script src="../js/cadastro.js" defer></script>
     <title>Cadastro - SeaGuardian</title>
 </head>
+<header class="cabecalho-login-cadastro-sugestoes">
+       
+    <div class="logo">
+            <figure><img src="../assets/images/img-01-logo.png" alt="logo" title="SeaGuardian">
+                <figcaption><h1>SeaGuardian</h1></figcaption>
+            </figure>
+    </div>
+    
+</header>
 <body class="signup-body">
     <p id="msgLogin"></p>
     <div class="signup-container">
-        <a href="../index.html" class="back-to-home"><i class="fas fa-home"></i> Voltar para a página inicial</a>
-        <h2>Cadastre-se</h2>
-        <form action="#" onsubmit="return cadastrar(event)">
+     
+        <form action="#" class="signup" onsubmit="return cadastrar(event)">
 
+            <a href="../index.html" class="back-to-home"><i class="fas fa-home"></i> Voltar para a página inicial</a>
+            <h2>Cadastre-se</h2>
             <div class="inputs">
                 <label for="idName">Nome:</label>
                 <input type="text" id="idName" name="txtName" placeholder="João da Silva" required>
@@ -46,8 +56,17 @@
             </div>
            
             <button type="submit">Cadastrar</button>
+
+            <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
         </form>
-        <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+       
     </div>
 </body>
+<footer class="rodape">
+    <div class="rodape-info">
+        <a href="https://github.com/MarineRenew-Tech/seaguardian"> <figure><img src="../assets/images/img-06-github-icon-footer.svg" alt="github"></figure></a>
+        <a href="../pages/integrantes.html">Integrantes</a>
+    </div>
+    <p>SeaGuardian todos os direitos reservados ©</p>
+</footer>
 </html>

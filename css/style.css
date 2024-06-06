@@ -75,7 +75,33 @@ backdrop-filter: blur(5px);
 .cabecalho a:hover{
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+.cabecalho-login-cadastro-sugestoes{
+    display: flex;
+    justify-content: center;
+    padding: 0 2em 0 2em;
+    align-items:center;
+   color: #fff;
+    width: 100%;
+    margin-bottom: 2em;
+    height: 8em;
+    box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 6px 12px 0px rgba(0,0,0,0.49);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #000;
 
+}
+.cabecalho-login-cadastro-sugestoes .logo h1{
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.cabecalho-login-cadastro-sugestoes .logo figure{
+    display: flex;
+    align-items: center;
+}
+.cabecalho-login-cadastro-sugestoes .logo figure img{
+    width: 5em;
+}
 .parte1-main .container{
     display: flex;
     padding:  0 0 25em 0;
@@ -275,13 +301,15 @@ backdrop-filter: blur(5px);
     font-weight: 500;
 }
 .rodape{
+    overflow: visible;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 2em;
     justify-content: center;
     color: #fff;
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     background-color: #0d3543;
 }
@@ -291,18 +319,12 @@ backdrop-filter: blur(5px);
 .rodape .rodape-info{
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
 
 }
 .rodape .rodape-info a{
     text-decoration: none;
     color: #fff;
-}
-/* Estilos gerais */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 /* Estilos para a página de login */
@@ -311,41 +333,45 @@ body.login-body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background: url(../assets/images/img-02-parte-1-main.jpg) no-repeat center center fixed;
     background-size: cover;
 }
-
-.login-container {
+.login-container{
+    height: 100vh;
+}
+.login{
     color: #fff;
     border: 2px solid #fff;
-    padding: 1.7em 2em;
+    padding: 2em 2em;
+    margin-bottom: 2em;
     border-radius: 8px;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+   
 }
 
-.login-container h2 {
+.login h2 {
     margin-bottom: 20px;
     padding-top: 1em;
 }
 
-.login-container .back-to-home{
+.login .back-to-home{
     text-decoration: none;
     color: #fff;
 }
 
-.login-container label {
+.login label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-.login-container input[type="email"],
-.login-container input[type="password"],
-.login-container input[type="text"] {
+.login input[type="email"],
+.login input[type="password"],
+.login input[type="text"] {
     outline: none;
     width: 100%;
     padding: 10px;
@@ -354,7 +380,7 @@ body.login-body {
     border-radius: 4px;
 }
 
-.login-container button {
+.login button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -365,24 +391,24 @@ body.login-body {
     cursor: pointer;
 }
 
-.login-container button:hover {
+.login button:hover {
     background-color: #45a049;
 }
 
-.login-container p {
+.login p {
     margin-top: 20px;
 }
 
-.login-container p a {
+.login p a {
     color: #4CAF50;
     text-decoration: none;
 }
 
-.login-container p a:hover {
+.login p a:hover {
     text-decoration: underline;
 }
 
-.login-container form i{
+.login i{
     color: #000;
     overflow: visible;
     display: grid;
@@ -399,12 +425,15 @@ body.signup-body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background: url(../assets/images/img-09-parte-3-main.jpg) no-repeat center center fixed;
     background-size: cover;
 }
-
-.signup-container {
+.signup-container{
+    height: 100vh;
+}
+.signup {
+    margin-bottom: 2em;
     color: #fff;
     border: 2px solid #fff;
     padding: 1.7em 2em;
@@ -415,25 +444,24 @@ body.signup-body {
     text-align: center;
 }
 
-.signup-container h2 {
+.signup h2 {
     margin-bottom: 20px;
-    padding-top: 1em;
+    padding-top:0.5em;
 }
 
-.signup-container .back-to-home{
+.signup .back-to-home{
     text-decoration: none;
     color: #fff;
 }
 
-.signup-container label {
+.signup label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-.signup-container input[type="text"],
-.signup-container input[type="email"],
-.signup-container input[type="password"] {
+.signup input[type="text"],input[type="email"],
+ input[type="password"] {
     outline: none;
     width: 100%;
     padding: 10px;
@@ -441,7 +469,7 @@ body.signup-body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.signup-container .inputs i1, i2, i3{
+.signup .inputs i1, i2, i3{
     color: #000;
     overflow: visible;
     display: grid;
@@ -451,7 +479,7 @@ body.signup-body {
     transform: scale(1.2);
     margin: 0 4em 0 88%;
 }
-.signup-container button {
+.signup button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -462,20 +490,20 @@ body.signup-body {
     cursor: pointer;
 }
 
-.signup-container button:hover {
+.signup button:hover {
     background-color: #45a049;
 }
 
-.signup-container p {
-    margin-top: 20px;
+.signup p {
+    margin-top: 10px;
 }
 
-.signup-container p a {
+.signup p a {
     color: #4CAF50;
     text-decoration: none;
 }
 
-.signup-container p a:hover {
+.signup p a:hover {
     text-decoration: underline;
 }
 .logado {
@@ -508,7 +536,12 @@ body.signup-body {
     font-size: 1em;
     font-weight: 600;
 }
-
+/*---------------------Sugestoes------------------*/
+.sugestoes{
+    background: url(../assets/images/img-03-parte-2-main.jpg);
+    background-size: cover;
+}
+/*-------------------Fim sugestões-------------------*/
 @media only screen and (max-width: 600px) {
     .parte1-main{
         padding: 0;
