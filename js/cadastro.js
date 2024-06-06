@@ -1,6 +1,6 @@
 
 
-let iconEye2 = document.querySelector("i2");
+let iconEye2 = document.querySelector("#olho2");
 iconEye2.addEventListener('click', function(){
     
     let inputSenha2 = document.querySelector("#idPassword");
@@ -12,7 +12,7 @@ iconEye2.addEventListener('click', function(){
         inputSenha2.setAttribute("type","password");
     }
 });
-let iconEye3 = document.querySelector("i3");
+let iconEye3 = document.querySelector("#olho3");
 iconEye3.addEventListener('click', function(){
     
     let inputSenha3 = document.querySelector("#idConfPassword");
