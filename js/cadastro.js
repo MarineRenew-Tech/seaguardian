@@ -50,7 +50,7 @@ if (localStorage.getItem("cadastro-usuarios") == null) {
 let inputEmail = document.getElementById("idEmail");
 let inputNome = document.getElementById("idName");
 let inputSenha = document.getElementById("idPassword");
-let msgLogin = document.getElementById("msgLogin"); // Supondo que você tenha um elemento com esse ID
+let msgLogin = document.getElementById("msgLogin"); 
 
 function cadastrar(event) {
     event.preventDefault();
@@ -61,7 +61,7 @@ function cadastrar(event) {
         senha: inputSenha.value
     };
 
-    // Recarrega os usuários cadastrados do localStorage
+   
     let usuarioCadastrados = JSON.parse(localStorage.getItem("cadastro-usuarios"));
 
     let usuarioExistente = usuarioCadastrados.some((user) => {
@@ -89,65 +89,3 @@ function cadastrar(event) {
 }
 
 
-// let usuarioCadastrados = [
-//     {nome:"v",cpf:"123-456-789-10",email:"v@email.com", senha:"123456"},
-//   ];
-
-// if(localStorage.getItem("cadastro-usuarios") == null) {
-//     localStorage.setItem("cadastro-usuarios", JSON.stringify(usuarioCadastrados));
-//   }
-
-
-// let inputEmail = document.getElementById("idEmail")
-// let inputNome = document.getElementById("idName")
-// let inputSenha = document.getElementById("idPassword")
-
-//   function cadastrar(event) {
-//     event.preventDefault();
-//     let usuario = {nome: inputNome.value,cpf: inputCpf.value,email: inputEmail.value,senha: inputSenha.value};
-
-//     let usuarioExistente = usuarioCadastrados.some((user) => {
-//         return user.email === inputEmail.value || user.cpf === inputCpf.value;
-//     });
-    
-
-//     if (usuarioExistente) {
-        
-//         msgLogin.innerText = "Usuario ja cadastrado!";
-//         msgLogin.setAttribute("class", "deslogado");
-//         return false;
-//     } else {
-//         usuarioCadastrados.push(usuario);
-//         localStorage.setItem("cadastro-usuarios", JSON.stringify(usuarioCadastrados));
-//         msgLogin.innerText = "Usuario cadastrado com sucesso!";
-//         msgLogin.setAttribute("class", "logado");
-
-//         const timeoutTrue = setTimeout(() => {
-//             msgLogin.innerText = "";
-//             msgLogin.setAttribute("class", "");
-//             window.location.href = "../pages/login.html";
-//         }, 2000);
-
-    // usuarioCadastrados.map((user) => {
-    //     if((user.email == inputEmail.value) || (user.cpf == inputCpf.value)) {
-    //     msgLogin.innerText = "Usuario ja cadastrado!"
-    //     msgLogin.setAttribute("class", "deslogado") 
-    //     return false;
-    //     }else{
-    //         usuarioCadastrados.push(usuario);
-    //         localStorage.setItem("cadastro-usuarios", JSON.stringify(usuarioCadastrados));
-    //         msgLogin.innerText = "Usuario cadastrado com sucesso!"
-    //         msgLogin.setAttribute("class", "logado") 
-
-    //         const timeoutTrue = setTimeout(()=>{
-    //             msgLogin.innerText = "";
-    //             msgLogin.setAttribute("class", "")   
-    //             window.location.href = "../pages/login.html";
-    //         },2000);
-
-    //         return false;
-    //         }
-    // }
-//     }
-
-//   }
